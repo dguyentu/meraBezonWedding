@@ -2517,3 +2517,16 @@ textarea.input-field {
   }
 
 }
+
+/**
+   * Mobile || Desktop View
+   */
+@media only screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
