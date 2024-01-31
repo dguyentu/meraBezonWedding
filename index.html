@@ -18,6 +18,8 @@
   -->
   <link rel="shortcut icon" href="assets/images/icons8-rose-64.png" type="image/svg+xml">
 
+
+
   <!-- 
     - google font link
   -->
@@ -172,8 +174,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="https://drive.google.com/file/d/1TjzRp-8wBg8XxkJMUMonnlSD7DyYRLxS/view?usp=sharing"
-              class="navbar-link hover-underline" target="_blank">
+            <a href="#faq" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">FAQ</span>
@@ -555,6 +556,97 @@
     </article>
   </main>
 
+  <!-- 
+    -FAQ
+   -->
+  <section class="section event bg-black-10" aria-label="event" id="faq">
+    <div class="container">
+
+      <p class="section-subtitle label-2 text-center">FAQ</p>
+
+      <h2 class="section-title headline-1 text-center">More Information</h2>
+
+      <button class="accordion">What time is the wedding?</button>
+      <div class="panel">
+        <p>The reception will start at 5pm. Doors will open at 4:45 pm. Please plan to arrive on time to avoid any delay
+          in our grand entrance.</p>
+      </div>
+
+      <button class="accordion">Where do I park?</button>
+      <div class="panel">
+        <p>Our venue will be offering valet parking for $18/vehicle. There is also plenty of street parking nearby if
+          you prefer that option. </p>
+      </div>
+
+      <button class="accordion">What is the dress code? </button>
+      <div class="panel">
+        <p>Our wedding will be black-tie attire. We kindly ask that men wear a tuxedo and women wear a floor-length
+          gown. Additionally, we request that our guests avoid wearing white, ivory, or cream colored attire. </p>
+      </div>
+
+      <button class="accordion">When is the RSVP deadline? </button>
+      <div class="panel">
+        <p>Please RSVP no later than June 1, 2024. Unfortunately, we will not be able to accommodate you if you RSVP
+          late, as we will need to provide our vendors and the venue with the exact guest count by a certain date. </p>
+      </div>
+
+      <button class="accordion">Can I bring a plus one?</button>
+      <div class="panel">
+        <p>We are only able to accommodate guests formally invited on your wedding invitation. Your invitation will
+          specify how many seats have been saved in your honor. Thank you so much for understanding!</p>
+      </div>
+
+      <button class="accordion">Are kids welcome? </button>
+      <div class="panel">
+        <p>We love your little ones! However, we respectfully request <strong>no children under the age of 2.</strong>
+        </p>
+      </div>
+
+      <button class="accordion">Should we bring gifts? </button>
+      <div class="panel">
+        <p>We respectfully request no boxed gifts. In lieu of gifts, we would greatly appreciate cash donations.</p>
+      </div>
+
+      <button class="accordion">What is there to do around the area? </button>
+      <div class="panel">
+        <p>
+
+          Disneyland – Located in Anaheim, CA.<br><br>
+
+          Universal Studios – For fans of Harry Potter, Minions, and of course, Shrek; Universal Studios in Hollywood is
+          a great place for a family outing. With the adjacent City Walk and tons of delicious food options nearby, it’s
+          perfect for a full day getaway.<br><br>
+
+          Beaches (Santa Monica, Newport, Laguna) – There are many beaches within 1 hour of the venue with beautiful
+          views and tons of fun activities for the whole family.<br><br>
+
+          Art museums (LACMA, Getty, MOCA) – Fans of art and culture, you are in luck. DTLA is filled with many museums
+          that are sure to satisfy even the most serious of art connoisseurs.
+          Food – Any cuisine that your heart desires will likely be available nearby. Our personal favorite in the area:
+          Raffi’s Place. If you get a chance to try it, we promise you won’t regret it.
+
+        </p>
+      </div>
+
+      <a href="#rsvp" class="btn btn-primary">
+        <span class="text text-1">RSVP NOW</span>
+
+        <span class="text text-2" aria-hidden="true">See You Soon!</span>
+      </a>
+
+    </div>
+  </section>
+
+  </article>
+  </main>
+
+
+
+
+
+
+
+
 
   <!-- 
         - #SERVICE
@@ -818,6 +910,25 @@
           </a>
 
           <p class="contact-label">July 21<sup>st</sup> 2024: 5.00 pm to 1.00 am</p>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Recommended Hotels</p>
+
+          <a href="https://www.hilton.com/en/hotels/burhghf-hilton-los-angeles-north-glendale-and-executive-meeting-ctr/"
+            class="body-1 contact-number hover-underline">Hilton Los Angeles North/Glendale</a>
+
+          <div class="separator"></div>
+
+          <a href="https://www.hilton.com/en/hotels/laxglhx-hampton-suites-los-angeles-glendale/"
+            class="body-1 contact-number hover-underline">Hampton Inn and Suites Los Angeles – Glendale</a>
+
+          <div class="separator"></div>
+
+          <a href="https://www.hyatt.com/en-US/hotel/california/hyatt-place-glendale-los-angeles/laxzg"
+            class="body-1 contact-number hover-underline">Hyatt Place Glendale/Los Angeles</a>
+
+
 
           <!-- <p class="contact-label">Lunch Time</p>
 
@@ -1099,6 +1210,30 @@
     }
   </script>
 
+  <!-- 
+    -FAQ
+   -->
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>
